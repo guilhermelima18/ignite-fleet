@@ -4,7 +4,7 @@ import { Image } from "expo-image";
 
 export const Container = styled.View`
   width: 100%;
-  padding: 48px 24px 24px 24px;
+  padding: 28px;
   flex-direction: row;
   align-items: center;
   background-color: ${theme.COLORS.GRAY_700};
