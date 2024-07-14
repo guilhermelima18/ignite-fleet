@@ -7,10 +7,10 @@ import {
   Roboto_700Bold,
 } from "@expo-google-fonts/roboto";
 import { REALM_APP_ID } from "@env";
-import { SignIn } from "./src/screens/sign-in";
-import theme from "./src/theme";
-import { Loading } from "./src/components/loading";
-import { Home } from "./src/screens/home";
+import { SignIn } from "@/screens/sign-in";
+import theme from "@/theme";
+import { Loading } from "@/components/loading";
+import { AppRoutes } from "@/routes";
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
@@ -28,7 +28,7 @@ export default function App() {
           translucent
         />
         <UserProvider fallback={<SignIn />}>
-          <Home />
+          <AppRoutes />
         </UserProvider>
       </ThemeProvider>
     </AppProvider>

@@ -1,9 +1,7 @@
-import { Text } from "react-native";
+import { HomeHeader } from "@/components/home-header";
 import * as S from "./styles";
-import { HomeHeader } from "../../components/home-header";
 
 export function Home() {
-  console.log("teste");
   return (
     <S.Container>
       <HomeHeader />
